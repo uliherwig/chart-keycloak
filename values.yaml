@@ -2,12 +2,12 @@ global:
   projectName: bn-project
   appVersion: 0.0.1
 
-podSpec:
-  hostNetwork: true
-  hostAliases:
-    - ip: "127.0.0.1"  # IP des Mailservers (localhost)
-      hostnames:
-        - "mail.local" 
+# podSpec:
+#   hostNetwork: true
+#   hostAliases:
+#     - ip: "127.0.0.1"  # IP des Mailservers (localhost)
+#       hostnames:
+#         - "mail.local" 
 
 keycloak:
   kind: deployment
