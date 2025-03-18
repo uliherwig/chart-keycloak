@@ -1,7 +1,7 @@
 global:
   projectName: bn-project
   appVersion: 0.0.1
-  
+
 podSpec:
   hostNetwork: true
   hostAliases:
@@ -70,6 +70,24 @@ keycloak:
       value: "25"
     - name: KEYCLOAK_SMTP_FROM
       value: "kc-admin@mail.local"
+  
+    - name: KC_HOSTNAME
+      value: "keycloak.local"  # Optional, falls du einen spezifischen Hostnamen für Keycloak hast
+    - name: KC_EMAIL_FROM
+      value: "kc-admin@mail.local"  
+    - name: KC_SMTP_HOST
+      value: "mail.local"  # Dein lokaler Mailserver
+    - name: KC_SMTP_PORT
+      value: "25"  # Port für SMTP mit TLS
+    - name: KC_SMTP_USER
+      value: ""  # Falls Auth erforderlich
+    - name: KC_SMTP_PASSWORD
+      value: ""  # Falls Auth erforderlich
+    - name: KC_SMTP_STARTTLS
+      value: "false"  # TLS aktivieren
+    - name: KC_SMTP_AUTH
+      value: "false"  # Authentifizierung aktivieren (wenn notwendig)
+
   
   keycloakConfigCli:
     enabled: true
