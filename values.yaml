@@ -5,6 +5,9 @@ global:
 keycloak:
   kind: deployment
   fullnameOverride: keycloak
+  
+  networkPolicy:
+    allowExternalEgress: true
 
   auth:
     adminUser: admin
