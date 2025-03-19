@@ -63,7 +63,7 @@ keycloak:
     - name: KEYCLOAK_IMPORT
       value: /opt/jboss/keycloak/standalone/configuration/config-keycloak.json
     - name: KEYCLOAK_HOSTNAME
-      value: "mail.local"
+      value: "keycloak.dev"
     - name: KEYCLOAK_SMTP_HOST
       value: "mail.local"
     - name: KEYCLOAK_SMTP_PORT
@@ -71,14 +71,7 @@ keycloak:
     - name: KEYCLOAK_SMTP_FROM
       value: "kc-admin@mail.local"
   
-    # - name: KC_HOSTNAME
-    #   value: "keycloak.local"  # Optional, falls du einen spezifischen Hostnamen für Keycloak hast
-    # - name: KC_EMAIL_FROM
-    #   value: "kc-admin@mail.local"  
-    # - name: KC_SMTP_HOST
-    #   value: "mail.local"  # Dein lokaler Mailserver
-    # - name: KC_SMTP_PORT
-    #   value: "25"  # Port für SMTP mit TLS
+
     # - name: KC_SMTP_USER
     #   value: ""  # Falls Auth erforderlich
     # - name: KC_SMTP_PASSWORD
