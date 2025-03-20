@@ -5,13 +5,14 @@ global:
 keycloak:
   kind: deployment
   fullnameOverride: keycloak
-  
-  networkPolicy:
+
+  networkPolicy: 
     allowExternalEgress: true
 
-  auth:
-    adminUser: admin
-    adminPassword: password
+
+  # auth:
+  #   adminUser: admin
+  #   adminPassword: password
 
   proxy: edge
 
